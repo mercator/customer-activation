@@ -225,9 +225,9 @@ class Netzarbeiter_CustomerActivation_Model_Observer
     protected function _checkRequestRoute($module, $controller, $action)
     {
         $req = Mage::app()->getRequest();
-        if (strtolower($req->getModuleName()) == $module
-                && strtolower($req->getControllerName()) == $controller
-                && strtolower($req->getActionName()) == $action
+        if (strtolower($req->getRequestedRouteName()) == $module
+                && strtolower($req->getRequestedControllerName()) == $controller
+                && strtolower($req->getRequestedActionName()) == $action
         ) {
             return true;
         }

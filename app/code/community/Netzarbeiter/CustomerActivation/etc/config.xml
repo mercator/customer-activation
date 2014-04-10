@@ -132,7 +132,7 @@
     <default>
         <customer>
             <customeractivation>
-                <disable_ext>0</disable_ext>
+                <disable_ext>1</disable_ext>
                 <always_active_in_admin>1</always_active_in_admin>
                 <alert_admin>1</alert_admin>
                 <admin_email></admin_email>
